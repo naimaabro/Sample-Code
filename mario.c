@@ -10,32 +10,20 @@ int main(void)
     }
     while (n<1 || n>8); //restricts user's input from 1 to 8 rows (no: of stairs in pyramid)
 
-    for(int i=1; i<=n; i++) //loop creates height of the pyramid
+        for(int i=1; i<=n; i++) //loop creates height of the pyramid
         {
 
-        {
-            for(int k=(i+1); k<=n ; k++)   //loop aligns the first stairs/pyramid to the right side
             {
-                printf(" ");
+                for(int k=(i+1); k<=n ; k++)   //loop aligns the stairs/pyramid to the right side
+                {
+                    printf(" ");
+                }
             }
-        }
-        //
-        {
-        for(int m=0; m<i; m++)                  //loop creates width/stairs of the pyramid
-        {
-        printf("#");                          //blocks of second pyramid are printed
-        }
-        printf("  ");
-        }
 
-    {
         for(int j=0; j<i; j++)                  //loop creates width/stairs of the pyramid
-            {
-            printf("#");                          //blocks of pyramid are printed
-            }
-    }
-        //
-
+        {
+        printf("#");                          //blocks of pyramid are printed
+        }
     printf("\n");
     }
 
