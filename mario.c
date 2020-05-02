@@ -25,7 +25,7 @@ int main(void)
         {
         printf("#");                          //blocks of second pyramid are printed
         }
-        printf("   ");
+        printf("  ");
         }
 
     {
