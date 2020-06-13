@@ -28,7 +28,7 @@ printf("%.2f dollar contains %i cents \n" , dollar , cents);
     if (cqr == 0)
     printf(" %i \n" , cq);
 
-    else if (cqr != 0 || cqr%dimes == 0)
+    else if (cqr != 0 && cqr%dimes == 0)
     //printf (" %i \n" , cqr );
 
     //else if (cqr%dimes == 0)
