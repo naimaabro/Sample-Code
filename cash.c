@@ -28,26 +28,26 @@ int cqrd = cqr%dimes, cqrdn =cqrd%nickels;
 //if(cents % quarters == 0)
 {
     if (cqr == 0)
-    printf(" %i \n" , cq);
+    printf("Total %i \n" , cq);
 
-    else if (cqr != 0 && cqr%dimes == 0)
-  //  printf (" %i \n" , cqr );
+    else if (cqr != 0)
+    printf (" %i \n" , cqr );
 
-//    else if (cqr%dimes == 0)
-    printf (" %i \n" , cqr+(cqr/dimes) );
+    else if (cqr%dimes == 0)
+    printf ("Total is: %i \n" , cqr+(cqr/dimes) );
 
     else if (cqr%dimes != 0)
     printf (" %i \n " , cqr%dimes);
 
     else if (cqrd%nickels == 0)
-    printf ( "%i" , cqr+(cqr/dimes)+(cqrd/nickels));
+    printf ( "%i" , cqrd/nickels);
 
     else if (cqrd%nickels != 0)
     printf (" %i \n " , cqrd%nickels);
 
 
     else if (cqrdn%pennies == 0)
-    printf ( "%i" , cqr+(cqr/dimes)+(cqrd/nickels)+(cqrdn/pennies));
+    printf ( "%i" , cqrdn/pennies);
 
     else if (cqrdn%pennies != 0)
     printf (" %i \n " , cqrd%pennies);
