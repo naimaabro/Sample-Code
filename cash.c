@@ -40,14 +40,14 @@ int cqrd = cqr%dimes, cqrdn =cqrd%nickels;
     printf (" %i \n " , cqr%dimes);
 
     else if (cqrd%nickels == 0)
-    printf ( "%i" , cqrd/nickels);
+    printf ( "%i" , cqr+(cqr/dimes)+(cqrd/nickels));
 
     else if (cqrd%nickels != 0)
     printf (" %i \n " , cqrd%nickels);
 
 
     else if (cqrdn%pennies == 0)
-    printf ( "%i" , cqrdn/pennies);
+    printf ( "%i" , cqr+(cqr/dimes)+(cqrd/nickels)+(cqrdn/pennies));
 
     else if (cqrdn%pennies != 0)
     printf (" %i \n " , cqrd%pennies);
