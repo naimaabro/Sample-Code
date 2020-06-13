@@ -34,7 +34,7 @@ int cqrd = cqr%dimes, cqrdn =cqrd%nickels;
     printf (" %i \n" , cqr );
 
     else if (cqr%dimes == 0)
-    printf ("Total is: %i \n" , cqr+(cqr/dimes) );
+    printf (" %i \n" , cqr+(cqr/dimes) );
 
     else if (cqr%dimes != 0)
     printf (" %i \n " , cqr%dimes);
