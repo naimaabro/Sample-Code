@@ -17,15 +17,13 @@ int main(void)
 
     int quarters=25, dimes=10, nickels=5, pennies=1;
 
-   // int cq = cents/quarters, dq = cents/dimes, nq = nickels/quarters, pq = pennies/quarters;
+
       int cq = cents/quarters;
 
- //   int cqr = cents%quarters, dqr = cents%dimes, nqr = nickels%quarters, pqr = pennies%quarters;
+      int cqr = cents%quarters, cqrd = cqr%dimes, cqrdn =cqrd%nickels;
 
-      int cqr = cents%quarters, qdr = quarters%dimes, dnr = dimes%nickels, npr = nickels%pennies;
-int cqrd = cqr%dimes, cqrdn =cqrd%nickels;
+printf("%.2f dollar contains %i cents \n" , dollar , cents);
 
-//if(cents % quarters == 0)
 {
     if (cqr == 0)
     printf(" %i \n" , cq);
@@ -53,7 +51,8 @@ int cqrd = cqr%dimes, cqrdn =cqrd%nickels;
     printf (" %i \n " , cqrd%pennies);
 }
 
-
+// int cq = cents/quarters, dq = cents/dimes, nq = nickels/quarters, pq = pennies/quarters;
+//   int cqr = cents%quarters, dqr = cents%dimes, nqr = nickels%quarters, pqr = pennies%quarters;/
 //    else if (cqr/nickels == 0)
 //    printf ("mmmmmmm");
 
