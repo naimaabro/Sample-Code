@@ -28,7 +28,7 @@ int cqrd = cqr%dimes, cqrdn =cqrd%nickels;
 //if(cents % quarters == 0)
 {
     if (cqr == 0)
-    printf("Total %i \n" , cq);
+    printf(" %i \n" , cq);
 
     else if (cqr != 0)
     printf (" %i \n" , cqr );
