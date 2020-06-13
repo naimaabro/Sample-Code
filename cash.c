@@ -30,10 +30,10 @@ int cqrd = cqr%dimes, cqrdn =cqrd%nickels;
     if (cqr == 0)
     printf("Total Number of Changed Coins is: %i \n" , cq);
 
-    else if (cqr != 0)
-    printf (" %i \n" , cqr );
+    else if (cqr != 0 && cqr%dimes == 0)
+  //  printf (" %i \n" , cqr );
 
-    else if (cqr%dimes == 0)
+//    else if (cqr%dimes == 0)
     printf ("Total is: %i \n" , (cqr/dimes)+cqr );
 
     else if (cqr%dimes != 0)
