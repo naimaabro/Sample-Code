@@ -11,9 +11,9 @@ int main(void)
 
     }
 
-    while (dollar<0);
+    while (dollar<0 && dollar>9);
 
-    int cents = round(dollar * 10);
+    int cents = round(dollar * 100);
 
     int quarters=25, dimes=10, nickels=5, pennies=1;
 
