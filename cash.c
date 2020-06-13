@@ -22,7 +22,7 @@ int main(void)
 
       int cqr = cents%quarters, cqrd = cqr%dimes, cqrdn =cqrd%nickels;
 
-//printf("%.2f dollar contains %i cents \n" , dollar , cents);
+// printf("%.2f dollar contains %i cents \n" , dollar , cents);
 
 {
     if (cqr == 0)
@@ -32,20 +32,20 @@ int main(void)
     //printf (" %i \n" , cqr );
 
     //else if (cqr%dimes == 0)
-    printf (" %i \n" , cqr+(cqr/dimes) );
+    printf (" %i \n" , (cqr/dimes) );
 
     else if (cqr%dimes != 0 && cqrd%nickels == 0)
  //   printf (" %i \n " , cqr%dimes);
 
    // else if (cqrd%nickels == 0)
-    printf ( "%i \n" , cqr+(cqrd/nickels));
+    printf ( "%i \n" , (cqrd/nickels));
 
     else if (cqrd%nickels != 0 && cqrdn%pennies == 0)
  //   printf (" %i \n " , cqrd%nickels);
 
 
    // else if (cqrdn%pennies == 0)
-    printf ( "%i \n" , cqr+(cqrdn/pennies));
+    printf ( "%i \n" , (cqrdn/pennies));
 
     else if (cqrdn%pennies != 0)
     printf (" %i \n " , cqrd%pennies);
