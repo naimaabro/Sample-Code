@@ -22,7 +22,7 @@ int main(void)
 
       int cqr = cents%quarters, cqrd = cqr%dimes, cqrdn =cqrd%nickels;
 
-printf("%.2f dollar contains %i cents \n" , dollar , cents);
+//printf("%.2f dollar contains %i cents \n" , dollar , cents);
 
 {
     if (cqr == 0)
