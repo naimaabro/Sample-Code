@@ -34,13 +34,13 @@ printf("%.2f dollar contains %i cents \n" , dollar , cents);
     //else if (cqr%dimes == 0)
     printf (" %i \n" , cqr+(cqr/dimes) );
 
-    else if (cqr%dimes != 0 || cqrd%nickels == 0)
+    else if (cqr%dimes != 0 && cqrd%nickels == 0)
  //   printf (" %i \n " , cqr%dimes);
 
    // else if (cqrd%nickels == 0)
     printf ( "%i \n" , cqr+(cqr/dimes)+(cqrd/nickels));
 
-    else if (cqrd%nickels != 0 || cqrdn%pennies == 0)
+    else if (cqrd%nickels != 0 && cqrdn%pennies == 0)
  //   printf (" %i \n " , cqrd%nickels);
 
 
