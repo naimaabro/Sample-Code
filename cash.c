@@ -13,7 +13,7 @@ int main(void)
 
     while (dollar<0);
 
-    int cents = round(dollar * 100);
+    int cents = round(dollar * 10);
 
     int quarters=25, dimes=10, nickels=5, pennies=1;
 
@@ -34,7 +34,7 @@ int cqrd = cqr%dimes, cqrdn =cqrd%nickels;
   //  printf (" %i \n" , cqr );
 
 //    else if (cqr%dimes == 0)
-    printf ("Total is: %i \n" , (cqr/dimes)+cqr );
+    printf ("Total is: %i \n" , cqr+(cqr/dimes) );
 
     else if (cqr%dimes != 0)
     printf (" %i \n " , cqr%dimes);
