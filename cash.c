@@ -66,7 +66,7 @@ int main(void)
 
     }
 
-    while (dollar<0 && dollar>9);
+    while (dollar<0);
 
     int cents = round(dollar * 100);
 
