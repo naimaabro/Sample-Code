@@ -18,7 +18,7 @@ int main(void)
     int quarters = 25, dimes = 10, nickels = 5, pennies = 1;
 
 
-  printf("%.2f dollar contains %i cents \n", dollar, cents);
+    printf("%.2f dollar contains %i cents \n", dollar, cents);
 
 
     if (cents % quarters == 00)
@@ -38,6 +38,7 @@ int main(void)
 
     else if (((cents % quarters) % dimes) % nickels != 0 && (((cents % quarters) % dimes) % nickels) % pennies == 0)
     {
-        printf("%i\n", (cents / quarters) + ((cents % quarters) / dimes) + (((cents % quarters) % dimes) / nickels) + (((cents % quarters) % dimes) % nickels) / pennies);
+        printf("%i\n", (cents / quarters) + ((cents % quarters) / dimes) + (((cents % quarters) % dimes) / nickels) + (((
+                    cents % quarters) % dimes) % nickels) / pennies);
     }
 }
