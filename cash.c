@@ -22,15 +22,22 @@ int main(void)
 
 
     if (cents % quarters == 00)
-printf ("%i\n", cents/quarters);
+    {
+        printf("%i\n", cents / quarters);
+    }
 
-else if (cents%quarters != 0 && (cents%quarters)%dimes == 0)
-printf ("%i\n", (cents/quarters) + ((cents%quarters)/dimes) );
+    else if (cents % quarters != 0 && (cents % quarters) % dimes == 0)
+    {
+        printf("%i\n", (cents / quarters) + ((cents % quarters) / dimes) );
+    }
 
-else if ((cents%quarters)%dimes != 0 && ((cents%quarters)%dimes)%nickels == 0)
-printf ("%i\n", (cents/quarters) + ((cents%quarters)/dimes) + (((cents%quarters)%dimes)/nickels));
+    else if ((cents % quarters) % dimes != 0 && ((cents % quarters) % dimes) % nickels == 0)
+    {
+        printf("%i\n", (cents / quarters) + ((cents % quarters) / dimes) + (((cents % quarters) % dimes) / nickels));
+    }
 
-
-else if (((cents%quarters)%dimes)%nickels != 0 && (((cents%quarters)%dimes)%nickels)%pennies == 0)
-printf ("%i\n", (cents/quarters) + ((cents%quarters)/dimes) + (((cents%quarters)%dimes)/nickels) + (((cents%quarters)%dimes)%nickels)/pennies);
+    else if (((cents % quarters) % dimes) % nickels != 0 && (((cents % quarters) % dimes) % nickels) % pennies == 0)
+    {
+        printf("%i\n", (cents / quarters) + ((cents % quarters) / dimes) + (((cents % quarters) % dimes) / nickels) + (((cents % quarters) % dimes) % nickels) / pennies);
+    }
 }
