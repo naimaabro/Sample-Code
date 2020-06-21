@@ -53,7 +53,7 @@ int main (void)
 
     if (total_sum % 10 != 0)
     {
-       printf("This is an invalid number.\n") ; 
+       printf("INVALID\n") ; 
     }
     
     
@@ -65,9 +65,9 @@ int main (void)
 
 
 
-    {
-        card = card %10 ;
-    }
+    //{
+      //  card = card %10 ;
+    // }
 
     if ((card >= 340000000000000 && card <= 349999999999999) || (card >= 370000000000000 && card <= 379999999999999))
     {
